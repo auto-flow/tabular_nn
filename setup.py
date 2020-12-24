@@ -87,21 +87,21 @@ def build_package_data(pkgs):
 
 
 setup(
-    name='xenon',
+    name='tabular_nn',
     version=version,
     author='Qichun Tang',
     author_email='qichun.tang@bupt.edu.cn',
     description='Tabular NN: Neural Network for Tabular Data implement by PyTorch',
     long_description=long_description,
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/markdown',  # x-rst
     license='BSD',
-    url='https://bitbucket.org/xtalpi/xenon',
+    url='https://github.com/auto-flow/tabular_nn',
     packages=find_packages("./", include=all_pkgs),
     package_dir=build_package_dir(all_pkgs),
     package_data=build_package_data(all_pkgs),
     python_requires='>=3.6.*',
     install_requires=install_requires,
-    platforms=['Linux'],
+    # platforms=['Linux'],
     classifiers=[
         "Environment :: Console",
         "Intended Audience :: Developers",
@@ -115,5 +115,7 @@ setup(
         "Topic :: Scientific/Engineering :: Information Analysis",
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
 )
