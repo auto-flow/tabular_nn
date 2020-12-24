@@ -96,7 +96,7 @@ setup(
     long_description_content_type='text/markdown',  # x-rst
     license='BSD',
     url='https://github.com/auto-flow/tabular_nn',
-    packages=find_packages("./", include=all_pkgs),
+    packages=find_packages(".", include=all_pkgs),
     package_dir=build_package_dir(all_pkgs),
     package_data=build_package_data(all_pkgs),
     python_requires='>=3.6.*',

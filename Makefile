@@ -1,5 +1,5 @@
 reinstall:
-	pip uninstall xenon -y
+	pip uninstall tabular-nn -y
 	rm -rf build dist *.egg-info
 	python setup.py install
 
